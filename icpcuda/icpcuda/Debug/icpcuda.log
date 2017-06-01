@@ -1,0 +1,40 @@
+﻿La génération a démarré 01/06/2017 16:57:10.
+     1>Projet "c:\Users\li\documents\visual studio 2010\Projects\icpcuda\icpcuda\icpcuda.vcxproj" sur le nœud 2 (CudaBuild cible(s)).
+     1>AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /I. /FIcuda_runtime.h /c "c:\Users\li\documents\visual studio 2010\Projects\icpcuda\icpcuda\kernel.cu" 
+       AddCudaCompilePropsDeps:
+       La cible est ignorée "AddCudaCompilePropsDeps", car tous les fichiers de sortie sont à jour par rapport aux fichiers d'entrée.
+     1>Le projet "c:\Users\li\documents\visual studio 2010\Projects\icpcuda\icpcuda\icpcuda.vcxproj" (1) génère "c:\Users\li\documents\visual studio 2010\Projects\icpcuda\icpcuda\icpcuda.vcxproj" (1:2) sur le nœud 2 (CudaBuildCore cible(s)).
+     1>CudaBuildCore:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\li\AppData\Local\Temp\tmpa2801b82483e481291dbe4ab004a0d18.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od  /Zi /RTC1 /MDd " -o Debug\kernel.cu.obj "c:\Users\li\documents\visual studio 2010\Projects\icpcuda\icpcuda\kernel.cu"
+         
+         c:\Users\li\documents\visual studio 2010\Projects\icpcuda\icpcuda>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od  /Zi /RTC1 /MDd " -o Debug\kernel.cu.obj "c:\Users\li\documents\visual studio 2010\Projects\icpcuda\icpcuda\kernel.cu" 
+     1>c:/Users/li/documents/visual studio 2010/Projects/icpcuda/icpcuda/kernel.cu(20): warning : declaration requires a typedef name
+         
+     1>c:/Users/li/documents/visual studio 2010/Projects/icpcuda/icpcuda/kernel.cu(52): error : expected a "{"
+         
+     1>c:/Users/li/documents/visual studio 2010/Projects/icpcuda/icpcuda/kernel.cu(55): warning : parsing restarts here after previous syntax error
+         
+     1>c:/Users/li/documents/visual studio 2010/Projects/icpcuda/icpcuda/kernel.cu(57): error : identifier "c" is undefined
+         
+     1>c:/Users/li/documents/visual studio 2010/Projects/icpcuda/icpcuda/kernel.cu(57): error : identifier "a" is undefined
+         
+     1>c:/Users/li/documents/visual studio 2010/Projects/icpcuda/icpcuda/kernel.cu(57): error : identifier "b" is undefined
+         
+     1>c:/Users/li/documents/visual studio 2010/Projects/icpcuda/icpcuda/kernel.cu(68): error : identifier "addWithCuda" is undefined
+         
+     1>c:/Users/li/documents/visual studio 2010/Projects/icpcuda/icpcuda/kernel.cu(136): error : identifier "addKernel" is undefined
+         
+         6 errors detected in the compilation of "C:/Users/li/AppData/Local/Temp/tmpxft_00001e94_00000000-5_kernel.cpp1.ii".
+     1>CUDACOMPILE : nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+     1>CUDACOMPILE : nvcc warning : nvcc support for Microsoft Visual Studio 2010 and earlier has been deprecated and is no longer being maintained
+         kernel.cu
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\BuildCustomizations\CUDA 8.0.targets(689,9): error MSB3721: La commande ""C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od  /Zi /RTC1 /MDd " -o Debug\kernel.cu.obj "c:\Users\li\documents\visual studio 2010\Projects\icpcuda\icpcuda\kernel.cu"" s'est arrêtée avec le code 2.
+     1>Génération du projet "c:\Users\li\documents\visual studio 2010\Projects\icpcuda\icpcuda\icpcuda.vcxproj" terminée (CudaBuildCore cible(s)) -- ÉCHEC.
+     1>Génération du projet "c:\Users\li\documents\visual studio 2010\Projects\icpcuda\icpcuda\icpcuda.vcxproj" terminée (CudaBuild cible(s)) -- ÉCHEC.
+
+ÉCHEC de la build.
+
+Temps écoulé 00:00:05.91
