@@ -51,11 +51,21 @@ void MovingPointSet(PointSet &P, PointSet &T)
 {
 	for (int i=0; i<P.size; i++)
 	{
-
+		P.x[i] += T.x[0];
+		P.y[i] += T.y[0];
+		P.z[i] += T.z[0];
 	}
-}+
+}
 
-
+__global__ void Distance(PointSet *point, PointSet* X, flpat *result)
+{
+	int tid = threadIdx.x;
+	int bid = blockIdx.x;
+	for (int i= bid*512+tid; i<X.size; i+= 2024)
+	{
+		result[i] = pow(point.x[0]-X.x[i])+pow(point.y[0]-X.y[i])+pow(point.z[0]-X.z[i]);
+	}
+}
 
 
 
