@@ -1,0 +1,6 @@
+﻿  main.cpp
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\eigen\src\core\arch\cuda\half.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\lij\documents\visual studio 2015\projects\project1\project1\main.cpp(25): warning C4091: “typedef ”: 没有声明变量时忽略“PointSet”的左侧
+c:\users\lij\documents\visual studio 2015\projects\project1\project1\main.cpp(29): warning C4091: “typedef ”: 没有声明变量时忽略“Rotation”的左侧
+  Project1.vcxproj -> c:\users\lij\documents\visual studio 2015\Projects\Project1\Debug\Project1.exe
+  Project1.vcxproj -> c:\users\lij\documents\visual studio 2015\Projects\Project1\Debug\Project1.pdb (Partial PDB)
